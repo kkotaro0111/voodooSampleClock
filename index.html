@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  body{
+    min-height: 3000px;
+  }
+  #clock{
+    width: 300px;
+    height: 300px;
+  }
+  .spacer{
+    height: 300px;
+  }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>Voodoo Clock Demo</h1>
+    <div class="spacer"></div>
+    <div id="clock"></div>
+  </center>
+
+<script src="lib/three.min.js"></script>
+<script src="lib/voodoo.min.debug.js"></script>
+<script src="clock.js"></script>
+<script>
+  new Clock({
+    color: "rgb(200, 200, 200)",
+    element: document.getElementById("clock")
+  });
+</script>
+</body>
+</html>
