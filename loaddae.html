@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  min-height: 4000px;
+  background-color: #eee;
+}
+#canv{
+  width: 100%;
+  height: 1000px;
+  background-color: #FEE;
+}
+#contrl{
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  list-style: none;
+}
+#contrl li{
+  float: left;
+  font-size: 64px;
+  margin-right: 1ex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+}
+#stats{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+}
+  
+  </style>
+</head>
+<body>
+<div id="canv"></div>
+<div id="stats"></div>
+<ul id="contrl">
+  <li class="plus">+</li>
+  <li class="minus">-</li>
+</ul>
+  
+<script src="lib/jquery-1.11.0.min.js"></script>
+<script src="lib/three.min.js"></script>
+<script src="lib/voodoo.min.debug.js"></script>
+<script src="lib/ColladaLoader.js"></script>
+<script src="lib/Detector.js"></script>
+<script src="lib/stats.min.js"></script>
+<script src="loaddae.js"></script>
+</body>
+</html>
