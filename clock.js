@@ -88,5 +88,6 @@ var Clock = voodoo.Model.extend({
     this.view.tick( date.getHours() / 12.0 * Math.PI * 2.0,
       date.getMinutes() / 60.0 * Math.PI * 2.0,
       date.getSeconds() / 60.0 * Math.PI * 2.0);
+    this.view.dirty();
   }
 });
